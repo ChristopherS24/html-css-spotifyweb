@@ -130,8 +130,9 @@ aside #aside-middle > div {
 }
 
 aside #aside-middle ul {
-    height: calc(100% - 60px)
-    overflow-y auto;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
 }
 
 aside #aside-bottom {
@@ -143,7 +144,26 @@ aside #aside-bottom > * {
 }
 
 aside #aside-bottom > :first-child {
-    border-bottom: gray 1px;
+    border-bottom: solid gray 1px;
+}
+
+/*
+FOOTER
+*/
+#footer-center ul {
+    display: flex;
+    list-style: none;
+}
+
+#footer-center ul li {
+    padding: 5px;
+}
+
+#footer-center ul li button {
+    border: none;
+    background: none;
+    color: white;
+    display: inline-block;
 }
 
 /*
@@ -173,6 +193,26 @@ RESPONSIVE
     
     #up > main {
         width: calc(100% - 50px);
+    }
+
+    aside #aside-top .logo-container .mobile {
+        display: block;
+    }
+
+    aside #aside-top .logo-container .desktop {
+        display: none;
+    }
+
+    aside #aside-top nav ul li a > span {
+        display: none;
+    } 
+
+    aside #aside-middle > * {
+        display: none;
+    }
+
+    aside #aside-bottom > * > span {
+        display: none;
     }
 }
 
