@@ -87,8 +87,64 @@ MACRO
     height: var(--lower-height);
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 
+/*
+ASIDE
+*/
+aside {
+    min-height: 350px;
+}
+
+aside #aside-top {
+    height: 140px;
+}
+
+aside #aside-top .logo-container {
+    padding: 10px 5px;
+}
+
+aside #aside-top nav ul {
+    list-style: none;
+}
+
+aside #aside-top nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+aside #aside-middle {
+    height: calc(100% - 200px);
+}
+
+aside #aside-middle > h4 {
+    height: 30px;
+}
+
+aside #aside-middle > div {
+    height: 30px;
+}
+
+aside #aside-middle ul {
+    height: calc(100% - 60px)
+    overflow-y auto;
+}
+
+aside #aside-bottom {
+    height: 60px;
+}
+
+aside #aside-bottom > * {
+    padding: 5px;
+}
+
+aside #aside-bottom > :first-child {
+    border-bottom: gray 1px;
+}
 
 /*
 RESPONSIVE
@@ -149,4 +205,20 @@ DEBUG
 
 .debug .my-col {
     background-color: blue;
+}
+
+.debug #aside-top {
+    background-color: aqua;
+}
+
+.debug #aside-middle {
+    background-color: crimson;
+}
+
+.debug #aside-middle ul {
+    background-color: brown;
+}
+
+.debug #aside-bottom {
+    background-color: aqua;
 }
