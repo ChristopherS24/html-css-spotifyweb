@@ -150,6 +150,17 @@ aside #aside-bottom > :first-child {
 /*
 FOOTER
 */
+
+#footer-left {
+   
+}
+
+#footer-left .coveralbum {
+    display: flex;
+    justify-content: center;
+    height: 65%;
+}
+
 #footer-center {
     width: 35%;
 }
