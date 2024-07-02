@@ -150,20 +150,49 @@ aside #aside-bottom > :first-child {
 /*
 FOOTER
 */
+#footer-center {
+    width: 35%;
+}
+
 #footer-center ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
 #footer-center ul li {
-    padding: 5px;
+    padding: 5px 20px;
 }
 
-#footer-center ul li button {
+#footer-center > :first-child ul li button {
     border: none;
     background: none;
     color: white;
     display: inline-block;
+}
+
+#footer-center > :last-child {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 0.75rem;
+}
+
+#footer-center > :last-child #time {
+    flex-grow: 1;
+    background-color: gray;
+    height: 4px;
+    margin: 0 4px;
+    border-radius: 2px;
+}
+
+#footer-center > :last-child #time > * {
+    background-color: darkgray;
+    width: 15%;
+    height: 4px;
+    margin: 0 10px;
+    border-radius: 2px;
 }
 
 /*
